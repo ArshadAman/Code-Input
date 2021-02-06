@@ -50,7 +50,7 @@ class Users(UserMixin, db.Model):
 
     comments = relationship("Comment", back_populates="comment_author")
 
-# db.create_all()
+db.create_all()
 
 
 class BlogPost(db.Model):
@@ -71,7 +71,7 @@ class BlogPost(db.Model):
     img_url = db.Column(db.String(250), nullable=False)
 
     comments = relationship("Comment", back_populates="parent_post")
-# db.create_all()
+db.create_all()
 
 class Comment(db.Model):
     __tablename__ = "comments"
@@ -90,7 +90,7 @@ class Comment(db.Model):
     parent_post = relationship("BlogPost", back_populates="comments")
     text = db.Column(db.Text, nullable=False)
 
-# db.create_all()
+db.create_all()
 
 
 
