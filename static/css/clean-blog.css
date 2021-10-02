@@ -39,7 +39,7 @@ a:focus, a:hover {
 }
 
 blockquote {
-  font-style: italic;
+  font-style: bold;
   color: #868e96;
 }
 
@@ -60,7 +60,7 @@ blockquote {
   border-bottom-left-radius: 5px;
 }
 content p {
-    font-style: italic;
+    font-style: bold;
     color:red;
 }
 
@@ -217,7 +217,7 @@ img::-moz-selection {
   }
   #mainNav.is-fixed {
     /* when the user scrolls down, we hide the header right above the viewport */
-    position: fixed;
+    position: absolute;
     top: -67px;
     transition: transform 0.2s;
     border-bottom: 1px solid white;
